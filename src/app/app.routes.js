@@ -10,7 +10,7 @@
     $urlRouterProvider.otherwise("/");
 
     $stateProvider
-      .state("Home", {
+      .state("home", {
         url: "/",
         template: '<h1>Bienvenido al ejercicio</h1>'
       });
