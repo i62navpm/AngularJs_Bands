@@ -1,0 +1,22 @@
+{
+  "name": "AngularJs_Bands",
+  "version": "0.0.1",
+  "homepage": "https://github.com/i62navpm/AngularJs_Bands",
+  "description": "Ejercicio Angular",
+  "keywords": [
+    "angular",
+    "rocks",
+    "default"
+  ],
+  "authors": [
+    "Manuel Navarro Pérez"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

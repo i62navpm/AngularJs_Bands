@@ -1,0 +1,24 @@
+{
+  "name": "AngularJs_Bands",
+  "version": "0.0.1",
+  "description": "Ejercicio Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i62navpm/AngularJs_Bands.git"
+  },
+  "keywords": [
+    "angular",
+    "rocks",
+    "default"
+  ],
+  "author": "Manuel Navarro Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i62navpm/AngularJs_Bands/issues"
+  },
+  "homepage": "https://github.com/i62navpm/AngularJs_Bands"
+}
