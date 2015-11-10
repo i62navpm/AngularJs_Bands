@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "method": "GET",
+      "url": "^(/api)?/rollingStones"
+    },
+    "response": {
+      "file": "rollingStones-fixture.json",
+      "headers": {"content-type": "application/json"}
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "^(/api)?/beatles"
+    },
+    "response": {
+      "file": "beatles-fixture.json",
+      "headers": {"content-type": "application/json"}
+    }
+  },
+  {
+    "request": {
+      "method": "GET",
+      "url": "^(/api)?/queen"
+    },
+    "response": {
+      "file": "queen-fixture.json",
+      "headers": {"content-type": "application/json"}
+    }
+  }
+]
