@@ -10,18 +10,7 @@ var paths = {
               scssFiles      : ['./src/content/styles/*.scss'],
               imagesFiles    : ['./src/content/assets/*.png'],
               htmlFiles      : ['./src/app/**/*.html', '!./src/app/commons/directives/**/*.html'],
-              htmlDirectives : ['./src/app/commons/directives/**/*.html'],
-              testFiles      : [
-      './bower_components/angular/angular.js',
-      './bower_components/angular-animate/angular-animate.js',
-      './bower_components/angular-aria/angular-aria.js',
-      './bower_components/angular-material/angular-material.js',
-      './bower_components/angular-ui-router/release/angular-ui-router.js',
-      './bower_components/angular-sanitize/angular-sanitize.js',
-      './bower_components/angular-mocks/angular-mocks.js',
-      './build/**/*.js',
-      './src/**/*.spec.js'
-    ]
+              htmlDirectives : ['./src/app/commons/directives/**/*.html']
             };
 
 gulp.task('prepareJS', function () {
@@ -49,12 +38,6 @@ gulp.task('prepareCSS', function () {
         cascade: true
     }))
     .pipe(gulp.dest('./build/css'));
-});
-
-gulp.task('prepareImages', function(){
-  return gulp.src(paths.imagesFiles)
-  .pipe(plugins.imagemin())
-  .pipe(gulp.dest('./build/assets'));
 });
 
 gulp.task('prepareLibs', function () {
@@ -115,6 +98,6 @@ gulp.task('watch', function(){
   gulp.watch(paths.htmlDirectives, ['prepareDirectivesTempl']);
 });
 
-gulp.task('default', ['prepareJS', 'prepareCSS', 'prepareImages', 'prepareLibs', 'prepareTemplates', 'prepareDirectivesTempl','webServer', 'test', 'watch'], function() {
+gulp.task('default', ['prepareJS', 'prepareCSS', 'prepareLibs', 'prepareTemplates', 'prepareDirectivesTempl','webServer', 'test', 'watch'], function() {
 });
 
