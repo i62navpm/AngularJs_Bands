@@ -5,7 +5,7 @@ var plugins = require('gulp-load-plugins')();
 var wiredep = require('wiredep').stream;
 
 var paths = {
-              jsFiles        : ['./src/app/**/*.js'],
+              jsFiles        : ['./src/app/**/*.js', '!./src/app/**/*.spec.js'],
               scssFiles      : ['./src/content/styles/*.scss'],
               imagesFiles    : ['./src/content/assets/*.png'],
               htmlFiles      : ['./src/app/**/*.html', '!./src/app/commons/directives/**/*.html'],

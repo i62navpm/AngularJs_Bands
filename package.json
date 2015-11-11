@@ -4,7 +4,7 @@
   "description": "Ejercicio Angular",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,9 @@
     "gulp-webserver": "^0.9.1",
     "jshint": "^2.8.0",
     "wiredep": "^2.2.2",
-    "gulp-stubby-server": "^0.1.5"
+    "gulp-stubby-server": "^0.1.5",
+    "karma-jasmine": "^0.2.2",
+    "jasmine-core": "^2.3.4",
+    "karma-phantomjs-launcher": "^0.2.1"
   }
 }
