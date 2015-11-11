@@ -1,6 +1,10 @@
 {
   "globals": {
     "require": false,
+    "describe": false,
+    "expect": false,
+    "it": false,
+    "inject": false,
     "angular": false,
     "$": false
   },
