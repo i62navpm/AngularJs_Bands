@@ -26,6 +26,15 @@
         element[0].content = "Esto es la descripción por defecto";
         element = angular.element(document.querySelector('meta[name="keywords"]'));
         element[0].content = "angular rocks default";
+
+        element = angular.element(document.querySelector('meta[property="og:title"]'));
+        element[0].content = "";
+        element = angular.element(document.querySelector('meta[property="og:type"]'));
+        element[0].content = "";
+        element = angular.element(document.querySelector('meta[property="og:url"]'));
+        element[0].content = "";
+        element = angular.element(document.querySelector('meta[property="og:image"]'));
+        element[0].content = "";
       }
 
       $state.go(to);

@@ -1,5 +1,7 @@
 {
   "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZNaqBBjrIZw\" frameborder=\"0\" allowfullscreen></iframe>",
   "texto": "The Rolling Stones",
-  "imagen": "http://1.bp.blogspot.com/-6_sHhllfKig/U3zTYcpjFhI/AAAAAAAABC0/7ey4_SMAHMc/s1600/rolling_stones.png"
+  "imagen": "http://1.bp.blogspot.com/-6_sHhllfKig/U3zTYcpjFhI/AAAAAAAABC0/7ey4_SMAHMc/s1600/rolling_stones.png",
+  "videoUrl": "https://www.youtube.com/watch?v=ZNaqBBjrIZw"
+
 }
