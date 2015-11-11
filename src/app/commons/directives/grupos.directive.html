@@ -1,7 +1,7 @@
 <md-content flex layout-padding class="md-whiteframe-4dp">
   <div layout="column" layout-align="space-around center">
-    <h1>{{vm.texto}}</h1>
-    <img layout-margin src="{{vm.imagen}}" width="400" height="300" alt="Imagen">
-    <div ng-bind-html="vm.video"></div>
+    <h1>{{vm.datos.texto}}</h1>
+    <img layout-margin src="{{vm.datos.imagen}}" width="400" height="300" alt="Imagen">
+    <div ng-bind-html="vm.datos.video"></div>
   </div>
 </md-content>

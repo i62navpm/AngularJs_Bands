@@ -11,9 +11,7 @@
       restrict: 'E',
       templateUrl: './templates/directives/grupos.directive.html',
       scope: {
-        texto: '=texto',
-        video: '=video',
-        imagen: '=imagen'
+        datos: '=datos'
       },
       controller: 'Grupo',
       controllerAs: 'vm',
