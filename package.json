@@ -40,6 +40,10 @@
     "gulp-stubby-server": "^0.1.5",
     "karma-jasmine": "^0.2.2",
     "jasmine-core": "^2.3.4",
-    "karma-phantomjs-launcher": "^0.2.1"
+    "karma-phantomjs-launcher": "^0.2.1",
+    "gulp-karma": "0.0.5",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.20",
+    "run-sequence": "^1.1.4"
   }
 }

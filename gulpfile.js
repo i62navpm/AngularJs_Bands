@@ -3,13 +3,25 @@
 var gulp    = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var wiredep = require('wiredep').stream;
+var Server = require('karma').Server;
 
 var paths = {
               jsFiles        : ['./src/app/**/*.js', '!./src/app/**/*.spec.js'],
               scssFiles      : ['./src/content/styles/*.scss'],
               imagesFiles    : ['./src/content/assets/*.png'],
               htmlFiles      : ['./src/app/**/*.html', '!./src/app/commons/directives/**/*.html'],
-              htmlDirectives : ['./src/app/commons/directives/**/*.html']
+              htmlDirectives : ['./src/app/commons/directives/**/*.html'],
+              testFiles      : [
+      './bower_components/angular/angular.js',
+      './bower_components/angular-animate/angular-animate.js',
+      './bower_components/angular-aria/angular-aria.js',
+      './bower_components/angular-material/angular-material.js',
+      './bower_components/angular-ui-router/release/angular-ui-router.js',
+      './bower_components/angular-sanitize/angular-sanitize.js',
+      './bower_components/angular-mocks/angular-mocks.js',
+      './build/**/*.js',
+      './src/**/*.spec.js'
+    ]
             };
 
 gulp.task('prepareJS', function () {
@@ -73,6 +85,13 @@ gulp.task('stubby', function(cb) {
   return plugins.stubbyServer(options, cb);
 });
 
+gulp.task('test', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
+
 gulp.task('webServer',  ['stubby'], function() {
   gulp.src('./')
     .pipe(plugins.webserver({
@@ -96,5 +115,6 @@ gulp.task('watch', function(){
   gulp.watch(paths.htmlDirectives, ['prepareDirectivesTempl']);
 });
 
-gulp.task('default', ['prepareJS', 'prepareCSS', 'prepareImages', 'prepareLibs', 'prepareTemplates', 'prepareDirectivesTempl','webServer', 'watch'], function() {
+gulp.task('default', ['prepareJS', 'prepareCSS', 'prepareImages', 'prepareLibs', 'prepareTemplates', 'prepareDirectivesTempl','webServer', 'test', 'watch'], function() {
 });
+
